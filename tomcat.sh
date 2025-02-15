@@ -1,5 +1,6 @@
 #amazon-linux-extras install java-openjdk11 -y
 yum install java-17-amazon-corretto -y
+yum install git -y
 wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz
 tar -zxvf apache-tomcat-9.0.99.tar.gz
 sed -i '56  a\<role rolename="manager-gui"/>' apache-tomcat-9.0.99/conf/tomcat-users.xml
